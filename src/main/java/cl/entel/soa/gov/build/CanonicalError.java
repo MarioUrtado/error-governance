@@ -1,4 +1,4 @@
-package cl.entel.soa.gov;
+package cl.entel.soa.gov.build;
 
 import cl.entel.soa.gov.freemaker.Factory;
 import cl.entel.soa.gov.model.CanonicalDTO;
@@ -64,5 +64,9 @@ public class CanonicalError {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public List<CanonicalDTO> getCanonicalErrors() {
+        return canonicalErrors;
     }
 }

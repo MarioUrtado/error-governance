@@ -1,4 +1,4 @@
-package cl.entel.soa.gov;
+package cl.entel.soa.gov.build;
 
 import cl.entel.soa.gov.freemaker.Factory;
 import cl.entel.soa.gov.model.FieldDTO;

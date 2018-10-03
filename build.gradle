@@ -16,7 +16,7 @@ repositories {
 }
 
 ext {
-    artifactId = "entity-manager"
+    artifactId = "entity-governance"
     versionId= "0.1.0"
 }
 
@@ -29,7 +29,7 @@ apply plugin: 'io.spring.dependency-management'
 bootJar {
     baseName = artifactId
     version =  versionId
-    mainClassName = 'cl.entel.tde.soa.integration.App'
+    mainClassName = 'cl.entel.soa.gov.App'
 }
 
 task copyAppJar(type: Copy) {

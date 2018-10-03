@@ -1,4 +1,4 @@
-package cl.entel.soa.gov;
+package cl.entel.soa.gov.build;
 
 import cl.entel.soa.gov.freemaker.Factory;
 import cl.entel.soa.gov.model.CanonicalDTO;
@@ -88,5 +88,13 @@ public class ErrorMapping {
         } catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    public List<ErrorMappingRowDTO> getMappings() {
+        return mappings;
+    }
+
+    public List<TargetDTO> getTargets() {
+        return targets;
     }
 }

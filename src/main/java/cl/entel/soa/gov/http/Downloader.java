@@ -29,12 +29,11 @@ public class Downloader {
 
     }
 
-    public InputStream download(String uri){
+    public InputStream download(String uri) throws Exception{
         InputStream inputStream = null;
-        try {
             URL url = new URL(uri);
-
             HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
+            logger.info(username + ":" + password);
             httpConn.setRequestProperty("Authorization", "Basic " + new String(Base64.getEncoder().encode(( username + ":" + password).getBytes())));
             httpConn.connect();
             if (httpConn.getResponseCode() == HttpURLConnection.HTTP_OK) {
@@ -49,9 +48,6 @@ public class Downloader {
             }
             httpConn.disconnect();
 
-        } catch (Exception e){
-            e.printStackTrace();
-        }
         return inputStream;
     }
 
