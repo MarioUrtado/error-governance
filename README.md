@@ -33,4 +33,4 @@ Governance error
 
 **Example with parameter required**
 
-C:\Users\MURTADO\Projects\error-governance> java -jar entity-governance-0.1.0.jar --credentials.confluence.password=XXXXXXX --credentials.confluence.username=XXXXXXX --mapping.output=D:\TEMP --canonical.output=D:\TEMP
+$- java -jar entity-governance-0.1.0.jar --credentials.confluence.password=XXXXXXX --credentials.confluence.username=XXXXXXX --mapping.output=D:\TEMP --canonical.output=D:\TEMP
